@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="16dp"
+    tools:context=".Incidentes">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@drawable/blue_bg">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:textStyle="bold|italic"
+                android:text="Ingreso de Incidencias"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlanco"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Evento:"
+                    android:fontFamily="serif"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/textView104"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="Zona:"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="Subestación:"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Alimentador:"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="serif"
+                    android:text="N° del poste:"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="serif"
+                    android:text="Autorización:"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Descripción:"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:text="Fecha del    evento:"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Acciones Realizadas:"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:prompt="@string/seleccion_evento"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:id="@+id/spinnerzona"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:prompt="@string/seleccion_Zona"
+                    android:spinnerMode="dialog"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+
+                <Spinner
+                    android:id="@+id/subestaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="28dp"
+                    android:prompt="@string/seleccion_subestacion"
+                    android:spinnerMode="dialog"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+
+
+                <Spinner
+                    android:id="@+id/spinnerAlim"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:prompt="@string/seleccion_alimentador"
+                    android:spinnerMode="dialog"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    />
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:hint="N° del poste"
+                    android:id="@+id/txtnroPoste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:fontFamily="serif"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp"
+                    />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spinnerAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:prompt="@string/seleccion_responsable"
+                    android:spinnerMode="dialog"
+                    android:textSize="14dp"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    tools:ignore="MissingConstraints"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/txtDescripcion"
+                        android:layout_height="85dp"
+                        android:hint="descripción"
+                        android:gravity="top"
+                        android:textSize="15dp"
+                        android:maxLength="3999"
+                        android:fontFamily="serif"
+                        android:inputType="textMultiLine"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="fecha"
+                        android:id="@+id/txtFechaEnvio"
+                        android:gravity="top"
+                        android:textSize="14dp"
+                        android:editable="false"
+                        android:fontFamily="serif"
+
+                        android:inputType="textMultiLine"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10" 
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:hint="acciones"
+                        android:id="@+id/txtManiobras"
+                        android:gravity="top"
+                        android:textSize="15dp"
+                        android:maxLength="3999"
+                        android:fontFamily="serif"
+
+                        android:inputType="textMultiLine"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1566e0"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:onClick="verificarJson"
+                    android:text="Enviar"
+                    android:textSize="12dp"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1566e0"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:onClick="openGallery"
+
+            android:text=" Subir Imágenes"
+            android:textSize="12dp"
+
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/gridImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="108dp"
+                android:columnWidth="100dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
